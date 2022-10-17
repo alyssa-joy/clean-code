@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class StudentHelperTest {
 
-	StudentHelper helper = new StudentHelper();
+	MyStudentHelperRefactored helper = new MyStudentHelperRefactored();
 	
 	@Test
 	public void testIsGradeB() {
@@ -46,9 +46,8 @@ public class StudentHelperTest {
 		assertEquals("C",helper.getGrade(50, true));
 		assertEquals("C",helper.getGrade(45, true));
 
-		//Will fail due to wrong implementation
-		//assertEquals("B",helper.getGrade(95, true));
-		//assertEquals("B",helper.getGrade(90, false));
+		assertEquals("B",helper.getGrade(95, true));
+		assertEquals("B",helper.getGrade(90, false));
 	}
 
 	@Test
