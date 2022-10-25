@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 public class MyCustomerBORefactoredTest {
 
-	private CustomerBO customerBO = new CustomerBOImpl();
+	private CustomerBO customerBO = new MyCustomerBOImplRefactored();
 
 	@Test
 	public void testCustomerProductSum_TwoProductsSameCurrencies()
